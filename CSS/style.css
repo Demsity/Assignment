@@ -26,4 +26,37 @@
   --border-radius-small: 8px;
   --border-radius-medium: 25px;
   --border-radius-rounded: 50%;
+}
+
+html, body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-theme-dark);
+}
+
+.top-menu {
+  background-color: var(--color-theme);
+  color: var(--color-white);
+}
+.top-menu > .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-menu a {
+  color: var(--color-white);
+  text-decoration: none;
+  margin: 1rem;
+}
+.top-menu a:hover {
+  color: var(--color-theme-dark);
+}
+.top-menu .social-media {
+  margin-left: 1rem;
+}
+.top-menu .social-media a {
+  margin: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
