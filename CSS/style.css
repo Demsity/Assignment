@@ -55,6 +55,30 @@ html, body {
 .top-menu a:hover {
   color: var(--color-theme-dark);
 }
+.top-menu .site-settings {
+  display: flex;
+}
+.top-menu .site-settings .btn {
+  background-color: var(--color-theme);
+  color: var(--color-white);
+  border: 0px;
+}
+.top-menu .site-settings .btn:hover {
+  color: var(--color-theme-dark);
+  border: 0px;
+}
+.top-menu .site-settings .dropdown-menu {
+  background-color: var(--color-theme);
+}
+.top-menu .site-settings .dropdown-menu a {
+  color: var(--color-white);
+  background-color: var(--color-theme);
+  margin: 1rem 0;
+}
+.top-menu .site-settings .dropdown-menu a:hover {
+  color: var(--color-theme-dark);
+  background-color: var(--color-theme);
+}
 .top-menu .menu-links .social-media {
   margin-left: 1rem;
   font-size: var(--font-size-14);
