@@ -88,4 +88,20 @@ html, body {
 }
 .top-menu .menu-links .social-media a:last-child {
   margin: 0 0 0 0.3rem;
+}
+
+.main-menu .container {
+  background-color: var(--color-white);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-menu .user-controls a {
+  color: var(--color-theme-dark);
+  text-decoration: none;
+  margin: 0 0 0 1rem;
+}
+.main-menu .user-controls a:hover {
+  color: var(--color-theme);
 }/*# sourceMappingURL=style.css.map */

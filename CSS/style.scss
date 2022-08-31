@@ -119,5 +119,26 @@ html, body {
         }
 
     }
- }    
 
+ }    
+// The Main part of the Header
+ .main-menu {
+
+    .container {
+        background-color: var(--color-white);
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .user-controls a {
+        color: var(--color-theme-dark);
+        text-decoration: none;
+        margin: 0 0 0 1rem;
+    }
+        .user-controls a:hover {
+            color: var(--color-theme);
+        }
+
+}
