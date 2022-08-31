@@ -39,6 +39,7 @@ html, body {
 .top-menu {
   background-color: var(--color-theme);
   color: var(--color-white);
+  height: 40px;
 }
 .top-menu > .container {
   height: 100%;
@@ -54,9 +55,12 @@ html, body {
 .top-menu a:hover {
   color: var(--color-theme-dark);
 }
-.top-menu .social-media {
+.top-menu .menu-links .social-media {
   margin-left: 1rem;
 }
-.top-menu .social-media a {
-  margin: 0.5rem;
+.top-menu .menu-links .social-media a {
+  margin: 0.3rem;
+}
+.top-menu .menu-links .social-media a:last-child {
+  margin: 0 0 0 0;
 }/*# sourceMappingURL=style.css.map */

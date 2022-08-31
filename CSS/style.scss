@@ -44,6 +44,8 @@ html, body {
 .top-menu {
     background-color: var(--color-theme);
     color: var(--color-white);
+    height: 40px;
+
 
     > .container {
         height: 100%;
@@ -62,13 +64,23 @@ html, body {
         color: var(--color-theme-dark);
     }
 
-    .social-media  {
-        margin-left: 1rem;
+    .menu-links {
+        .social-media  {
+            margin-left: 1rem;
+    
+            a {
+                margin: 0.3rem;
+        
+            }
+
+            a:last-child {
+                margin: 0 0 0 0;
+        
+            }
+    
+        }
 
     }
 
-    .social-media a {
-        margin: 0.5rem;
 
-    }
 }
