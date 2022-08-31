@@ -60,23 +60,24 @@ html, body {
         margin: 1rem;
     }
 
-    a:hover {
-        color: var(--color-theme-dark);
-    }
+        a:hover {
+            color: var(--color-theme-dark);
+        }
 
     .menu-links {
         .social-media  {
             margin-left: 1rem;
+            font-size: var(--font-size-14);
     
             a {
                 margin: 0.3rem;
         
             }
 
-            a:last-child {
-                margin: 0 0 0 0;
-        
-            }
+                a:last-child {
+                    margin: 0 0 0 0.3rem;
+            
+                }
     
         }
 
