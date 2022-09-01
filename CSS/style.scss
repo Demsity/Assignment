@@ -39,6 +39,15 @@ html, body {
     font-weight: var(--font-weight-regular);
     color: var(--color-theme-dark);
 }
+// Helpers
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 // top-menu
 
 .top-menu {
@@ -46,12 +55,8 @@ html, body {
     color: var(--color-white);
     height: 40px;
 
-
-    > .container {
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .container {
+        padding: 0;
     }
 
     a {
@@ -82,18 +87,20 @@ html, body {
 
     .site-settings .dropdown-menu {
         background-color: var(--color-theme);
+        border-radius: 0;
 
 
 
         a {
             color: var(--color-white);
             background-color: var(--color-theme);
-            margin: 1rem 0 ;
+            margin: 1rem 0;
 
         }
             a:hover {
                 color: var(--color-theme-dark);
                 background-color: var(--color-theme);
+                font-size: var(--font-size-16);
             }
 
     
@@ -101,44 +108,119 @@ html, body {
 
 // Top menu links and social media buttons
       
-        .menu-links {
-            .social-media  {
-                margin-left: 1rem;
-                font-size: var(--font-size-14);
+    .menu-links {
+        .social-media  {
+            margin-left: 1rem;
+            font-size: var(--font-size-14);
 
-            a {
-                margin: 0.3rem;
+        a {
+            margin: 0.3rem;
+    
+        }
+
+            a:last-child {
+                margin: 0 0 0 0.3rem;
         
             }
 
-                a:last-child {
-                    margin: 0 0 0 0.3rem;
-            
-                }
-    
-        }
+    }
 
     }
 
  }    
 // The Main part of the Header
- .main-menu {
+.main-menu {
+    
+    .border-bottom {
+        border-color: var(--color-gray-3);
+    }
 
     .container {
-        background-color: var(--color-white);
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        padding: 2rem 0; 
+    }
+// Left side, brand logo
+    .logo-menu {
+        flex: 2rem;
+        justify-content: start;
     }
 
-    .user-controls a {
-        color: var(--color-theme-dark);
-        text-decoration: none;
-        margin: 0 0 0 1rem;
+    .searhbar {
+        flex: 2rem;
     }
-        .user-controls a:hover {
-            color: var(--color-theme);
+// Right side, user controls
+    .user-controls  {
+        flex: 2rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+        .user-controls a {
+            color: var(--color-theme-dark);
+            text-decoration: none;
+            margin: 0 0 0 1rem;
         }
+            .user-controls a:hover {
+                color: var(--color-theme);
+            }
+
+}
+// The bottom part of the header
+.main-menu-bottom {
+
+    .container {
+    padding: 0;
+    margin-top: 0;
+    }   
+// The categories dropdown menu
+    .dropdown {
+        background-color: var(--color-theme);
+
+        .btn {
+            color: var(--color-white);
+            border: 0px;
+            // Height not working properly, fixed height ok?
+            height: 3.5rem;
+        }
+            .btn:hover {
+                color: var(--color-theme-dark);
+                border: 0px;
+            }
+
+        .dropdown-menu {
+            background-color: var(--color-theme);
+            border-radius: 0;
+        
+
+            a {
+                color: var(--color-white);
+            }
+                a:hover {
+                    background-color: var(--color-theme);
+                    color: var(--color-theme-dark);
+                    font-size: var(--font-size-16);
+
+                }
+        }
+
+    }
+// Special offer button
+    .special-offer {
+
+        padding: .3rem;
+
+        #btn-special-offer {
+            border-radius: 2rem;
+            border: none;
+            padding: .5rem 1rem;
+            background-color: var(--color-theme);
+            color: var(--color-white);
+        }
+
+            #btn-special-offer:hover {
+                color: var(--color-theme-dark);
+            }
+        
+        
+    }
 
 }
