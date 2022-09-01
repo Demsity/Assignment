@@ -140,20 +140,25 @@ html, body {
     }
 // Left side, brand logo
     .logo-menu {
-        flex: 2rem;
+        flex: 2;
         justify-content: start;
     }
-
+// Searchbar
     .searhbar {
-        flex: 2rem;
+        flex: 5;
     }
 // Right side, user controls
     .user-controls  {
-        flex: 2rem;
+        flex: 2;
         display: flex;
         justify-content: end;
         align-items: center;
     }
+        
+        .user-controls i {
+            font-size: var(--font-size-16)
+        }
+    
         .user-controls a {
             color: var(--color-theme-dark);
             text-decoration: none;

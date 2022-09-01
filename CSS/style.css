@@ -103,17 +103,20 @@ html, body {
   padding: 2rem 0;
 }
 .main-menu .logo-menu {
-  flex: 2rem;
+  flex: 2;
   justify-content: start;
 }
 .main-menu .searhbar {
-  flex: 2rem;
+  flex: 5;
 }
 .main-menu .user-controls {
-  flex: 2rem;
+  flex: 2;
   display: flex;
   justify-content: end;
   align-items: center;
+}
+.main-menu .user-controls i {
+  font-size: var(--font-size-16);
 }
 .main-menu .user-controls a {
   color: var(--color-theme-dark);
