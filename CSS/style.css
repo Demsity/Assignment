@@ -83,7 +83,7 @@ html, body {
 .top-menu .site-settings .dropdown-menu a:hover {
   color: var(--color-theme-dark);
   background-color: var(--color-theme);
-  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-bold);
 }
 .top-menu .menu-links .social-media {
   margin-left: 1rem;
@@ -115,6 +115,14 @@ html, body {
   justify-content: end;
   align-items: center;
 }
+.main-menu button {
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-theme);
+  color: var(--color-white);
+  font-size: 0.8rem;
+}
 .main-menu .user-controls i {
   font-size: var(--font-size-16);
 }
@@ -125,6 +133,22 @@ html, body {
 }
 .main-menu .user-controls a:hover {
   color: var(--color-theme);
+}
+.main-menu #shuffel {
+  position: relative;
+}
+.main-menu #shuffel #total-amount-shuffel {
+  position: absolute;
+  top: -0.8rem;
+  left: 0.7rem;
+}
+.main-menu #cart {
+  position: relative;
+}
+.main-menu #cart #total-amount-cart {
+  position: absolute;
+  top: -0.8rem;
+  left: 0.7rem;
 }
 
 .main-menu-bottom .container {
@@ -153,7 +177,7 @@ html, body {
 .main-menu-bottom .dropdown .dropdown-menu a:hover {
   background-color: var(--color-theme);
   color: var(--color-theme-dark);
-  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-bold);
 }
 .main-menu-bottom .special-offer {
   padding: 0.3rem;
@@ -167,4 +191,43 @@ html, body {
 }
 .main-menu-bottom .special-offer #btn-special-offer:hover {
   color: var(--color-theme-dark);
+}
+
+.carousell {
+  background-color: var(--color-gray-3);
+}
+.carousell .container {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+.carousell .carousell-text {
+  flex: 2;
+}
+.carousell .carousell-text h1 {
+  color: var(--color-theme-dark);
+  font-size: var(--font-size-60);
+  font-family: var(--font-play);
+}
+.carousell .carousell-text .bold {
+  color: var(--color-theme);
+  font-weight: var(--font-weight-bold);
+}
+.carousell .carousell-text p {
+  font-size: var(--font-size-14);
+}
+.carousell .carousell-text .carousell-btn {
+  border-radius: var(--border-radius-rounded);
+  font-weight: var(--font-weight-medium);
+}
+.carousell .carousell-text .carousell-btn #btn-shop-now {
+  border-radius: 2rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-white);
+  color: var(--color-theme);
+}
+.carousell .carousell-text .carousell-btn #btn-shop-now:hover {
+  background-color: var(--color-theme);
+  color: var(--color-white);
 }/*# sourceMappingURL=style.css.map */
