@@ -134,6 +134,12 @@ html, body {
 .main-menu .user-controls a:hover {
   color: var(--color-theme);
 }
+.main-menu .user-controls a:hover #total-amount-shuffel {
+  color: var(--color-theme-dark);
+}
+.main-menu .user-controls a:hover #total-amount-cart {
+  color: var(--color-theme-dark);
+}
 .main-menu #shuffel {
   position: relative;
 }
@@ -230,4 +236,44 @@ html, body {
 .carousell .carousell-text .carousell-btn #btn-shop-now:hover {
   background-color: var(--color-theme);
   color: var(--color-white);
+}
+
+.webshop-info .container-fluid {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1600px;
+  margin-top: 5rem;
+}
+.webshop-info .info-box {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-theme-light);
+  padding: 0.8rem;
+  border-radius: var(--border-radius-small);
+  margin: 1rem;
+  flex: 1;
+}
+.webshop-info .info-box .info-box-text {
+  margin-left: 1rem;
+}
+.webshop-info .info-box h1 {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-theme);
+}
+.webshop-info .info-box p {
+  font-size: var(--font-size-16);
+  color: var(--color-theme-dark);
+}
+.webshop-info .info-box:hover {
+  background-color: var(--color-theme);
+}
+.webshop-info .info-box:hover h1 {
+  color: var(--color-white);
+}
+.webshop-info .info-box:hover p {
+  color: var(--color-white);
+}
+.webshop-info .info-box:hover i {
+  filter: brightness(1000%);
 }/*# sourceMappingURL=style.css.map */

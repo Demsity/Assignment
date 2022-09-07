@@ -177,6 +177,15 @@ html, body {
         }
             .user-controls a:hover {
                 color: var(--color-theme);
+
+                #total-amount-shuffel {
+                    color: var(--color-theme-dark);
+                }
+
+                #total-amount-cart {
+                    color: var(--color-theme-dark);
+                }
+
             }
 
 
@@ -263,7 +272,7 @@ html, body {
     }
 
 }
-
+// The Carousell part of the site
 .carousell {
 
     .container {
@@ -317,6 +326,59 @@ html, body {
         }
 
     }
+}
+
+// Webshop info boxes
+.webshop-info {
+
+    .container-fluid {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 1600px;
+        margin-top: 5rem;
+    }
+
+    .info-box {
+        display: flex;
+        align-items: center;
+        background-color: var(--color-theme-light); 
+        padding: .8rem;
+        border-radius: var(--border-radius-small);
+        margin: 1rem;
+        flex: 1;
+
+        .info-box-text {
+            margin-left: 1rem;
+        }
+
+        h1 {
+            font-size: var(--font-size-16);
+            font-weight: var(--font-weight-medium);
+            color: var(--color-theme);
+        }
+
+        p {
+            font-size: var(--font-size-16);
+            color: var(--color-theme-dark);
+        }
+
+
+       }
+            .info-box:hover {
+                background-color: var(--color-theme); 
+
+                h1 {
+                    color: var(--color-white);
+                }
+                p {
+                    color: var(--color-white);
+                }
+
+                i {
+                    filter: brightness(1000%);
+                }
+            }
+
 }
 
 
