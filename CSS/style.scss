@@ -12,7 +12,7 @@
     --color-gray-3: #EEEEEE;   
     --color-gray-4: #F6F6F6;
     --color-product-instock: #82D8C6;
-    --color-prodict-outofstock: #FE6C6C;
+    --color-product-outofstock: #FE6C6C;
 
     --font-play: 'Play', sans-serif;
     --font-roboto: 'Roboto', sans-serif;
@@ -100,6 +100,7 @@ html, body {
             background-color: var(--color-theme);
             color: var(--color-white);
             border: 0px;
+            transition: 250ms ease-in-out;
         }    
             .site-settings .btn:hover {
                 color: var(--color-theme-dark);
@@ -195,16 +196,19 @@ html, body {
             color: var(--color-theme-dark);
             text-decoration: none;
             margin: 0 0 0 1rem;
+            transition: 250ms ease-in-out;
         }
             .user-controls a:hover {
                 color: var(--color-theme);
 
                 #total-amount-shuffel {
                     color: var(--color-theme-dark);
+                    transition: 250ms ease-in-out;
                 }
 
                 #total-amount-cart {
                     color: var(--color-theme-dark);
+                    transition: 250ms ease-in-out;
                 }
 
             }
@@ -259,6 +263,7 @@ html, body {
         .dropdown-menu {
             background-color: var(--color-theme);
             border-radius: 0;
+            transition: 250ms ease-in-out;
         
 
             a {
@@ -283,10 +288,12 @@ html, body {
             padding: .5rem 1rem;
             background-color: var(--color-theme);
             color: var(--color-white);
+            transition: 250ms ease-in-out;
         }
 
             #btn-special-offer:hover {
                 color: var(--color-theme-dark);
+                background-color: var(--color-theme-light);
             }
         
         
@@ -328,13 +335,15 @@ html, body {
             border-radius: var(--border-radius-rounded);
             font-weight: var(--font-weight-medium);
             
+            
 
             #btn-shop-now {
                 border-radius: 2rem;
                 border: none;
                 padding: .5rem 1rem;
                 background-color: var(--color-white);
-                color: var(--color-theme);    
+                color: var(--color-theme); 
+                transition: 250ms ease-in-out;   
             }
 
             #btn-shop-now:hover {
@@ -367,6 +376,7 @@ html, body {
         border-radius: var(--border-radius-small);
         margin: 1rem;
         flex: 1;
+        transition: 500ms ease-in-out;
 
         .info-box-text {
             margin-left: 1rem;
@@ -376,11 +386,18 @@ html, body {
             font-size: var(--font-size-16);
             font-weight: var(--font-weight-medium);
             color: var(--color-theme);
+            transition: 250ms ease-in-out;
         }
 
         p {
             font-size: var(--font-size-16);
             color: var(--color-theme-dark);
+            transition: 250ms ease-in-out;
+        }
+
+        i {
+            color: var(--color-theme);
+            transition: 50ms ease-in-out;
         }
 
 
@@ -452,17 +469,25 @@ html, body {
             background-color: var(--color-gray-1);
             border-radius: var(--border-radius-small);
             position: relative;
+            
+            
+            
+
 
             .category-box-title {
                 font-size: var(--font-size-16);
                 padding: .5rem 1rem;
                 background-color: var(--color-theme-dark);
+                height: 5rem;
                 width: 50%;
                 border-radius: 0  var(--border-radius-small) 0 0;
                 color: var(--color-theme);
                 position: absolute;
                 left: 0;
                 bottom: -2rem;
+                transition: 250ms ease-in-out;
+                
+                
 
                 span {
                     margin-top: 1rem;
@@ -477,9 +502,121 @@ html, body {
         .box:hover .category-box-title {
             height: 8rem;
         }
+   }
+
+    .card-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        width: 100;
+
+        .item-card {
+            background-color: var(--color-gray-4);
+            border-radius: var(--border-radius-small);
+            height: 400px;
+            width: 350px;
+            overflow: hidden;
+            position: relative;
+            margin: 1rem;
+            
+            
+
+            .card-links {
+                display: grid;
+                height: 50%;
+                background-color: var(--color-white);
+                position: absolute;
+                left: 75%;
+                font-size: var(--font-size-18);
+                border-radius: var(--border-radius-medium);
+                z-index: 1;
+                transition: top 500ms ease-in-out;
+                top: 100%;
+                a {
+                    margin: 0 0.5rem;
+                }
+
+                
+                
+
+                .card-link-icon {
+                    color: var(--color-gray-0);
+                }
+
+                .in-stock {
+                    color: var(--color-product-instock);
+                    margin: .8rem 0.5rem;
+                }
+
+                .card-link-icon:hover {
+                        color: var(--color-theme);
+                }
+
+                #in-stock-2 {
+                    color: var(--color-product-outofstock);
+                }
+            }
+
+        
+
+            .card-box {
+                background-color: var(--color-theme-dark);
+                color: var(--color-white);
+                border-radius: 0;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                opacity: 0.9;
+                transition: top 500ms ease-in-out;
+                top: 85%;
+                
+                
+
+                .card-info {
+                    margin: .8rem;
+                    font-size: var(--font-size-14);
+                    position: relative;
+                    transition: top 500ms ease-in-out;
+                    top: 1%;
+                    
+                    
+                    button {
+                        background: none;
+                        color: var(--color-white);
+                        border-color: var(--color-white);
+                    }
+                    .ordinary-price {
+                        text-decoration: line-through;
+                        margin-top: 1rem;
+                    }
+    
+                    .discount-price {
+                        font-size: var(--font-size-16);
+                        color: var(--color-theme);
+                    }
+
+                }
+
+            }
+        }
+
+        .item-card:hover .card-box {
+            top: 0;
+            height: 100%;
+
+            .card-info {
+                top: 50%;
+            }
+
+        }
+
+        .item-card:hover .card-links {
+            top: 10%;
+            
+        }
+
+
     }
-
-
+   
 }
-
-
