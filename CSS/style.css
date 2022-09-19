@@ -25,7 +25,7 @@
   --font-size-60: 5rem;
   --border-radius-small: 8px;
   --border-radius-medium: 25px;
-  --border-radius-rounded: 50%;
+  --border-radius-rounded: 2rem;
 }
 
 html, body {
@@ -294,7 +294,7 @@ html, body {
 }
 .webshop-info .info-box i {
   color: var(--color-theme);
-  transition: 50ms ease-in-out;
+  transition: 250ms ease-in;
 }
 .webshop-info .info-box:hover {
   background-color: var(--color-theme);
@@ -460,4 +460,67 @@ html, body {
 }
 .content .card-wrapper .item-card:hover .card-links {
   top: 10%;
+}
+.content .promo-banner {
+  background-color: var(--color-gray-1);
+  margin-top: 5rem;
+}
+.content .promo-banner .container {
+  flex-direction: row;
+  padding: 0;
+}
+.content .promo-banner .container .promo-box {
+  background-color: var(--color-theme);
+  text-align: center;
+  height: 400px;
+  padding: 5rem 2rem;
+}
+.content .promo-banner .container .promo-box h1 {
+  color: var(--color-white);
+  font-size: var(--font-size-36);
+  font-family: var(--font-play);
+}
+.content .promo-banner .container .promo-box h1 strong {
+  font-size: var(--font-size-60);
+}
+.content .promo-banner .container .promo-box h2 {
+  font-size: var(--font-size-18);
+  color: var(--color-white);
+}
+.content .promo-banner .container .promo-box .btn {
+  background-color: var(--color-theme-dark);
+  border-radius: var(--border-radius-rounded);
+  color: var(--color-white);
+  border: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: var(--font-size-16);
+  transition: 250ms ease-in-out;
+}
+.content .promo-banner .container .promo-box .btn:hover {
+  border: none;
+  background-color: var(--color-theme-light);
+  color: var(--color-theme);
+}
+.content .promo-banner .container .promo-text {
+  width: 500px;
+  margin: 2rem;
+}
+.content .promo-banner .container .promo-text p {
+  font-size: var(--font-size-14);
+  color: var(--color-white);
+}
+.content .promo-banner .container .promo-text .btn {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-rounded);
+  color: var(--color-theme-dark);
+  border: none;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  font-size: var(--font-size-14);
+  transition: 250ms ease-in-out;
+}
+.content .promo-banner .container .promo-text .btn:hover {
+  border: none;
+  background-color: var(--color-theme);
 }/*# sourceMappingURL=style.css.map */
