@@ -442,6 +442,11 @@ html, body {
   background: none;
   color: var(--color-white);
   border-color: var(--color-white);
+  transition: 250ms ease-in-out;
+}
+.content .card-wrapper .item-card .card-box .card-info button:hover {
+  background-color: var(--color-white);
+  color: var(--color-theme);
 }
 .content .card-wrapper .item-card .card-box .card-info .ordinary-price {
   text-decoration: line-through;
@@ -523,4 +528,73 @@ html, body {
 .content .promo-banner .container .promo-text .btn:hover {
   border: none;
   background-color: var(--color-theme);
+}
+.content .promo-flash-banner {
+  background-color: var(--color-theme-dark);
+  margin-top: 5rem;
+}
+.content .promo-flash-banner .container {
+  flex-direction: row;
+  padding: 0;
+  height: 400px;
+  align-items: baseline;
+  position: relative;
+}
+.content .promo-flash-banner .container .promo-flash-box {
+  background-color: var(--color-theme);
+  text-align: center;
+  height: 60%;
+  width: 250px;
+  padding: 0rem 2rem;
+}
+.content .promo-flash-banner .container .promo-flash-box h1 {
+  color: var(--color-white);
+  font-size: var(--font-size-60);
+  font-family: var(--font-play);
+}
+.content .promo-flash-banner .container .promo-flash-box h2 {
+  font-size: var(--font-size-18);
+  color: var(--color-white);
+}
+.content .promo-flash-banner .container .promo-flash-timer {
+  position: absolute;
+  right: 0;
+  top: 25%;
+}
+.content .promo-flash-banner .container .promo-flash-timer .time-circle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .promo-flash-banner .container .promo-flash-timer .time-circle-row .time-circle {
+  background-color: var(--color-white);
+  border-style: dashed;
+  border-width: 2px;
+  border-color: var(--color-theme);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+.content .promo-flash-banner .container .promo-flash-timer .time-circle-row .time-circle h1 {
+  font-family: var(--font-play);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-theme);
+  line-height: 50%;
+}
+.content .promo-flash-banner .container .promo-flash-timer .btn {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-rounded);
+  color: var(--color-theme);
+  border: none;
+  padding: 1rem 2.5rem;
+  margin: 2rem 10rem;
+  font-size: var(--font-size-14);
+  transition: 250ms ease-in-out;
+}
+.content .promo-flash-banner .container .promo-flash-timer .btn:hover {
+  border: none;
+  background-color: var(--color-theme);
+  color: var(--color-white);
 }/*# sourceMappingURL=style.css.map */
