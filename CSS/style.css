@@ -744,4 +744,64 @@ html, body {
 }
 .content .card-wrapper-grid .item-card-grid:hover .card-links {
   top: 5%;
+}
+.content .subscribe-newsletter {
+  background-color: var(--color-gray-4);
+  margin-top: 5rem;
+}
+.content .subscribe-newsletter .container {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+.content .subscribe-newsletter .container .section-title {
+  text-align: start;
+}
+.content .subscribe-newsletter .container #subscribe-newsletter {
+  position: relative;
+  width: 550px;
+}
+.content .subscribe-newsletter .container #subscribe-newsletter input {
+  border: var(--color-theme-light);
+  border-radius: var(--border-radius-medium);
+  width: 100%;
+  padding: 1rem;
+  font-size: var(--font-size-18);
+}
+.content .subscribe-newsletter .container #subscribe-newsletter input:focus {
+  outline: var(--color-theme-light);
+}
+.content .subscribe-newsletter .container #subscribe-newsletter .btn {
+  background-color: var(--color-theme);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--border-radius-medium);
+  height: 90%;
+  padding: 10px 30px;
+  position: absolute;
+  top: 5%;
+  right: 5px;
+  font-size: var(--font-size-14);
+}
+.content .subscribe-newsletter .container #subscribe-newsletter .btn:hover {
+  background-color: var(--color-theme-dark);
+  color: var(--color-theme);
+  border: none;
+}
+.content .subscribe-newsletter .container .gray-box {
+  background-color: var(--color-gray-1);
+  height: 400px;
+  width: 550px;
+}
+
+.footer {
+  background-color: var(--color-dark);
+}
+.footer .container {
+  padding: 1rem 0;
+  align-items: center;
+}
+.footer p {
+  color: var(--color-white);
+  margin-top: 1rem;
 }/*# sourceMappingURL=style.css.map */
