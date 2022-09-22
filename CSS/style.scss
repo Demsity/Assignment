@@ -529,7 +529,7 @@ html, body {
                 left: 75%;
                 font-size: var(--font-size-18);
                 border-radius: var(--border-radius-medium);
-                z-index: 1;
+                z-index: 2;
                 transition: top 500ms ease-in-out;
                 top: 100%;
 
@@ -551,7 +551,10 @@ html, body {
                             color: var(--color-theme);
                     }
 
-                #in-stock-2 {
+                #in-stock-new-1 {
+                    color: var(--color-product-outofstock);
+                }
+                #in-stock-featured-3 {
                     color: var(--color-product-outofstock);
                 }
             }
@@ -605,6 +608,16 @@ html, body {
                 }
 
             }
+
+            .card-rating {
+                color: var(--color-theme);
+                position: absolute;
+                top: 150%;
+                left: 50%;
+                z-index: 1;
+                transition: 500ms ease-in-out;
+                font-size: var(--font-size-16);
+            }
         }
 
         .item-card:hover .card-box {
@@ -618,6 +631,10 @@ html, body {
             .item-card:hover .card-links {
                 top: 10%;
                 
+            }
+            
+            .item-card:hover .card-rating {
+                top: 85%;
             }
     }
 
@@ -840,7 +857,7 @@ html, body {
                             color: var(--color-theme);
                     }
 
-                #in-stock-2 {
+                #in-stock-top-2 {
                     color: var(--color-product-outofstock);
                 }
             }
@@ -939,6 +956,15 @@ html, body {
                 }
 
             }
+            .card-rating {
+                color: var(--color-theme);
+                position: absolute;
+                top: 150%;
+                left: 65%;
+                z-index: 1;
+                transition: 500ms ease-in-out;
+                font-size: var(--font-size-16);
+            }
         }
 
         
@@ -962,9 +988,15 @@ html, body {
             .card-info {
                 top: 75%;
             }
+
         }
                 .item-card-grid:hover .card-links {
                     top: 5%;
+                    
+                }
+
+                .item-card-grid:hover .card-rating {
+                    top: 85%;
                     
                 }
     }

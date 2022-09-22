@@ -400,7 +400,7 @@ html, body {
   left: 75%;
   font-size: var(--font-size-18);
   border-radius: var(--border-radius-medium);
-  z-index: 1;
+  z-index: 2;
   transition: top 500ms ease-in-out;
   top: 100%;
 }
@@ -417,7 +417,10 @@ html, body {
 .content .card-wrapper .item-card .card-links .card-link-icon:hover {
   color: var(--color-theme);
 }
-.content .card-wrapper .item-card .card-links #in-stock-2 {
+.content .card-wrapper .item-card .card-links #in-stock-new-1 {
+  color: var(--color-product-outofstock);
+}
+.content .card-wrapper .item-card .card-links #in-stock-featured-3 {
   color: var(--color-product-outofstock);
 }
 .content .card-wrapper .item-card .card-box {
@@ -456,6 +459,15 @@ html, body {
   font-size: var(--font-size-16);
   color: var(--color-theme);
 }
+.content .card-wrapper .item-card .card-rating {
+  color: var(--color-theme);
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  z-index: 1;
+  transition: 500ms ease-in-out;
+  font-size: var(--font-size-16);
+}
 .content .card-wrapper .item-card:hover .card-box {
   top: 0;
   height: 100%;
@@ -465,6 +477,9 @@ html, body {
 }
 .content .card-wrapper .item-card:hover .card-links {
   top: 10%;
+}
+.content .card-wrapper .item-card:hover .card-rating {
+  top: 85%;
 }
 .content .promo-banner {
   background-color: var(--color-gray-1);
@@ -650,7 +665,7 @@ html, body {
 .content .card-wrapper-grid .item-card-grid .card-links .card-link-icon:hover {
   color: var(--color-theme);
 }
-.content .card-wrapper-grid .item-card-grid .card-links #in-stock-2 {
+.content .card-wrapper-grid .item-card-grid .card-links #in-stock-top-2 {
   color: var(--color-product-outofstock);
 }
 .content .card-wrapper-grid .item-card-grid .card-box {
@@ -725,6 +740,15 @@ html, body {
   font-size: var(--font-size-16);
   color: var(--color-theme);
 }
+.content .card-wrapper-grid .item-card-grid .card-rating {
+  color: var(--color-theme);
+  position: absolute;
+  top: 150%;
+  left: 65%;
+  z-index: 1;
+  transition: 500ms ease-in-out;
+  font-size: var(--font-size-16);
+}
 .content .card-wrapper-grid .item-card-grid:hover .card-box {
   top: 0;
   height: 100%;
@@ -744,6 +768,9 @@ html, body {
 }
 .content .card-wrapper-grid .item-card-grid:hover .card-links {
   top: 5%;
+}
+.content .card-wrapper-grid .item-card-grid:hover .card-rating {
+  top: 85%;
 }
 .content .subscribe-newsletter {
   background-color: var(--color-gray-4);
