@@ -61,20 +61,23 @@
         <!-- The main part of the header -->
         <div class="main-menu border-bottom">
             <div class="container mt-4">
-                <span class="logo-menu ">
+                <span class="logo-menu">
                     <a href="index.html"><i><img src="images/Logotype.svg" alt="Logotype KenKata"></i></a>
                 </span>
-                <span id="searchbar">
-                    <div></div>
+                <span class="searchbar">
+                    <form id="searchbar">
+                        <input type="search" placeholder="Search products...">
+                        <button class="btn"><i class="fa-regular fa-magnifying-glass"></i></button>
+                    </form>
                 </span>
                 <span class="user-controls">
-                    <a href="#"><i class="fa-solid fa-user me-3"></i>My account</a>
-                    <a href="#"><i class="fa-solid fa-heart ms-5"></i></a>
-                    <a id="shuffel" href="#">
+                    <a href="/log-in.html"><i class="fa-solid fa-user me-3"></i>My account</a>
+                    <a href="/log-in.html"><i class="fa-solid fa-heart ms-5"></i></a>
+                    <a id="shuffel" href="/log-in.html">
                         <button id="total-amount-shuffel">99</button>
                         <i class="fa-solid fa-shuffle"></i>
                     </a>
-                    <a id="cart" href="#">
+                    <a id="cart" href="/log-in.html">
                         <button id="total-amount-cart">99</button>
                         <i class="fa-solid fa-bag-shopping me-1"></i>
                         <span id="total_money">€9999.99</span>

@@ -160,6 +160,7 @@ html, body {
 
     .container {
         padding: 2rem 0; 
+        justify-content: space-around;
     }
 // Left side, brand logo
     .logo-menu {
@@ -167,8 +168,32 @@ html, body {
         justify-content: start;
     }
 // Searchbar
-    .searhbar {
-        flex: 5;
+    .searchbar {
+        flex: 3;
+        
+        input {
+            width: 90%;
+            height: 40px;
+            border-radius: 20px 0 0 20px;
+            padding: .2rem 1rem;
+            outline: none;
+            border: 1px solid;
+            border-color: var(--color-gray-2);
+        }
+
+        .btn {
+            border-radius: 0 20px 20px 0;
+            height: 40px;
+            transition: 250ms ease-in-out;
+            padding: .3rem .8rem;
+
+                &:hover {
+                    background-color: var(--color-theme-dark);
+                    color: var(--color-theme);
+                }
+        }
+
+
     }
 // Right side, user controls
     .user-controls  {
@@ -1076,5 +1101,250 @@ html, body {
     p {
         color: var(--color-white);
         margin-top: 1rem;
+    }
+}
+
+// Login page 
+
+.login-content {
+
+    .breadcrumbs {
+        background-color: #0E153D;
+        color: var(--color-theme);
+        align-items: center;
+
+        .container {
+            padding: 3rem 0;
+        }
+
+        .breadcrumb-current {
+            font-size: var(--font-size-16);
+        }
+
+        .breadcrumb-item {
+            text-decoration: none;
+            color: var(--color-white);
+            
+            a {
+                text-decoration: none;
+                color: var(--color-theme);
+
+            }
+        }
+    }
+
+    .login-forms {
+        margin: 5rem 0;
+        .container {
+            padding: 0;
+            justify-content: space-evenly;
+            align-items: baseline;
+
+            .form-card {
+                background-color: var(--color-gray-3);
+                border-radius: var(--border-radius-small);
+                padding: 1rem;
+                margin: 1rem;
+                width: 600px;
+
+                .register {
+                    display: flex;
+                    flex-direction: column;
+
+                    .required {
+                        color: var(--color-theme);
+                        display: inline;
+                    }
+
+                    label {
+                        font-size: var(--font-size-14);
+                    }
+
+                    input {
+                        border: none;
+                        border-radius: var(--border-radius-small);
+                        margin-bottom: 1rem;
+                        padding: .3rem;
+
+                        &:focus {
+                            box-shadow: 2px 2px 10px var(--color-theme-dark);
+                            
+                            outline: none;
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: var(--color-theme);
+                    }
+                    
+                    .btn {
+                        background-color: var(--color-theme);
+                        border-radius: var(--border-radius-rounded);
+                        color: var(--color-white);
+                        border: none;
+                        transition: 250ms ease-in-out;
+
+
+                        &:hover {
+                            border: none;
+                            background-color: var(--color-theme-dark);
+                            color: var(--color-theme);
+                        }
+                    }
+                }
+
+                .login {
+                    display: flex;
+                    flex-direction: column;
+
+                    .container {
+                        justify-content: space-between;
+                    }
+
+                    .required {
+                        color: var(--color-theme);
+                        display: inline;
+                    }
+
+                    label {
+                        font-size: var(--font-size-14);
+                    }
+
+                    input {
+                        border: none;
+                        border-radius: var(--border-radius-small);
+                        margin-bottom: 1rem;
+                        padding: .3rem;
+
+                        &:focus {
+                            box-shadow: 2px 2px 10px var(--color-theme-dark);
+                            outline: none;
+                        }
+                    }
+                    
+                    .btn {
+                        background-color: var(--color-theme);
+                        border-radius: var(--border-radius-rounded);
+                        color: var(--color-white);
+                        border: none;
+                        transition: 250ms ease-in-out;
+
+                        &:hover {
+                            border: none;
+                            background-color: var(--color-theme-dark);
+                            color: var(--color-theme);
+                        }
+                    }
+
+                    #lost-password {
+                        text-decoration: none;
+                        color: var(--color-theme);
+                        transition: color 250ms;
+
+                        &:hover {
+                            color: var(--color-theme-dark);
+                        }
+                    }
+
+                    #remember {
+                        
+                        &:focus {
+                            box-shadow: none;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .login-with {
+                    
+                .divider-line {
+                    height: 2px;
+                    border: 1px solid;
+                    border-color: var var(--color-gray-0);
+                    width: 100%;
+                    opacity: 30%;
+                }
+
+                .divider-text {
+                    padding: 2rem;
+                    width: 100%;
+                    text-align: center;
+                    font-weight: var(--font-weight-medium);
+                }
+
+
+            .social-media-login {
+                
+
+                .container {
+                    justify-content: space-evenly;
+                }
+
+                #facebook-login {
+                    background-color: #3B5998;
+                    color: var(--color-white);
+                    width: 300px;
+                    height: 40px;
+                    border: none;
+                    border-radius: var(--border-radius-small);
+                    text-align: center;
+                    position: relative;
+                    padding: .2rem 0;
+                    margin: .5rem;
+                    transition: box-shadow 100ms ease-in-out;
+
+                    i {
+                        position: absolute;
+                        left: 10px;
+                        font-size: var(--font-size-24);
+                    }
+                    p {
+                        display: inline-block;
+                        margin: .2rem;
+                        
+                    }
+                        &:hover {
+                            box-shadow: 1px 1px 5px var(--color-theme-dark);
+                        }
+                }
+                #google-login {
+                    background-color: #4285F4;
+                    color: var(--color-white);
+                    width: 300px;
+                    height: 40px;
+                    border: none;
+                    border-radius: var(--border-radius-small);
+                    text-align: center;
+                    position: relative;
+                    padding: .2rem 0;
+                    margin: .5rem;
+                    transition: box-shadow 100ms ease-in-out;
+
+                    i {
+                        position: absolute;
+                        left: 10px;
+                        font-size: var(--font-size-24);
+                        
+                    }
+                    p {
+                        display: inline-block;
+                        margin: .2rem;
+                        
+                    }
+
+                        &:hover {
+                            box-shadow: 1px 1px 5px var(--color-theme-dark);
+                        }
+                }
+
+            }
+        }
+        
     }
 }

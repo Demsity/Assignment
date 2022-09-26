@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Clothes for all people">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes for all people - Kenkata</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
+    <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="CSS/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- The header of the site -->
+    <header>
+        <!-- The bit at the top of the header -->
+        <div class="top-menu">
+            <div class="container">
+                <!-- Site settings dropdown menu of the top menu -->
+                     <!-- Fix Spacing between drop down and background -->
+                <div class="site-settings"> 
+                    <div class="dropdown">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          ENG
+                          <i class="fa-solid fa-chevron-down ms-2"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English<i class="fa-solid fa-chevron-right ms-3"></i></a></li>
+                            <li><a class="dropdown-item" href="#">Swedish<i class="fa-solid fa-chevron-right ms-3"></i></a></li> 
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          EUR
+                         <i class="fa-solid fa-chevron-down ms-2"></i>
+                      </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">EUR<i class="fa-solid fa-chevron-right ms-3"></i></a></li>
+                            <li><a class="dropdown-item" href="#">USD<i class="fa-solid fa-chevron-right ms-3"></i></a></li> 
+                            <li><a class="dropdown-item" href="#">SEK<i class="fa-solid fa-chevron-right ms-3"></i></a></li> 
+                        </ul>
+                    </div>
+                    <!-- Links and social media of the top menu -->
+                </div>
+                <div class="menu-links">
+                    <a href="#">Newsletter</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">FAQs</a>
+                    <span class="social-media">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- The main part of the header -->
+        <div class="main-menu border-bottom">
+            <div class="container mt-4">
+                <span class="logo-menu">
+                    <a href="index.html"><i><img src="images/Logotype.svg" alt="Logotype KenKata"></i></a>
+                </span>
+                <span class="searchbar">
+                    <form id="searchbar">
+                        <input type="search" placeholder="Search products...">
+                        <button class="btn"><i class="fa-regular fa-magnifying-glass"></i></button>
+                    </form>
+                </span>
+                <span class="user-controls">
+                    <a href="#"><i class="fa-solid fa-user me-3"></i>My account</a>
+                    <a href="#"><i class="fa-solid fa-heart ms-5"></i></a>
+                    <a id="shuffel" href="#">
+                        <button id="total-amount-shuffel">99</button>
+                        <i class="fa-solid fa-shuffle"></i>
+                    </a>
+                    <a id="cart" href="#">
+                        <button id="total-amount-cart">99</button>
+                        <i class="fa-solid fa-bag-shopping me-1"></i>
+                        <span id="total_money">€9999.99</span>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="main-menu-bottom">
+            <div class="container">
+                <div class="dropdown">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-bars-staggered"></i>
+                        Browse Categories
+                        <i class="fa-solid fa-chevron-down ms-2 ms-4"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Hats<i class="fa-solid fa-chevron-right ms-3"></i></a></li>
+                        <li><a class="dropdown-item" href="#">Kids<i class="fa-solid fa-chevron-right ms-3"></i></a></li>
+                        <li><a class="dropdown-item" href="#">Men<i class="fa-solid fa-chevron-right ms-3"></i></a></li>
+                        <li><a class="dropdown-item" href="#">Sunglasses<i class="fa-solid fa-chevron-right ms-3"></i></a></li>
+                        <li><a class="dropdown-item" href="#">Watches<i class="fa-solid fa-chevron-right ms-3"></i></a></li>
+                        <li><a class="dropdown-item" href="#">Women<i class="fa-solid fa-chevron-right ms-3"></i></a></li>
+                    </ul>
+                </div>
+                <div class="special-offer">
+                    <button id="btn-special-offer">SPECIAL OFFER</button>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <div class="login-content">
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumb-current">My Account</div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/Index.html">Home</a></li>
+                        <li class="breadcrumb-item active">My Account</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <section class="login-forms">  
+            <div class="container">
+                <div class="form-card">
+                    <h2>LOGIN</h2>
+                    <form class="login" method="post">
+                        <label for="email">Email adress <p class="required">*</p></label>
+                        <input type="email" name="email" id="email-reg" required>
+                        <label for="password">Password <p class="required">*</p></label>
+                        <input type="password" name="password" id="password-reg" required>
+                        <button class="btn mt-3" type="submit">LOG IN</button>
+                        <div class="container mt-3">
+                                <div class="remember">
+                                    <input id="remember" type="checkbox">
+                                    <label for="remember">Remember me</label>
+                                </div>
+                                <a id="lost-password" href="#">Lost your password?</a>
+                        </div>
+                    </form>
+                    <div class="login-with">
+                        <div class="divider container">
+                            <div class="divider-line"></div>
+                            <div class="divider-text">OR LOGIN WITH</div>
+                            <div class="divider-line"></div>
+                        </div>
+                        <div class="social-media-login">
+                            <div class="container">
+                                <button id="facebook-login">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                    <p>Facebook</p>
+                                </button>
+                                <button id="google-login">
+                                    <i class="fa-brands fa-google"></i>
+                                    <p>Google</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-card">
+                    <h2>REGISTER</h2>
+                    <p>Registering for this site allows you to access your order status and history. Just fill in the fields below, and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.</p>
+                    <form class="register" method="post">
+                        <label for="firstname">Firstname <p class="required">*</p></label>
+                        <input type="text" name="firstname" id="firstname-reg" required>
+                        <label for="lastname">Lastname <p class="required">*</p></label>
+                        <input type="text" name="lastname" id="lastname-reg" required>
+                        <label for="email">Email adress <p class="required">*</p></label>
+                        <input type="email" name="email" id="email-reg" required>
+                        <label for="password">Password <p class="required">*</p></label>
+                        <input type="password" name="password" id="password-reg" required>
+                        <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy</a>.</p>
+                        <button class="btn" type="submit">REGISTER</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="container footer-text">
+            <p>© Copyright 2022 Kenkata</p>
+        </div>
+    </footer>
+</body>
+</html>
