@@ -407,7 +407,7 @@ html, body {
   background-color: var(--color-gray-4);
   border-radius: var(--border-radius-small);
   height: 400px;
-  width: 350px;
+  width: 300px;
   overflow: hidden;
   position: relative;
   margin: 1rem;
@@ -580,15 +580,16 @@ html, body {
   text-align: center;
   height: 60%;
   width: 250px;
-  padding: 0rem 2rem;
+  padding: 2rem;
 }
 .content .promo-flash-banner .container .promo-flash-box h1 {
   color: var(--color-white);
-  font-size: var(--font-size-60);
+  font-size: 60px;
   font-family: var(--font-play);
+  font-weight: var(--font-weight-bold);
 }
 .content .promo-flash-banner .container .promo-flash-box h2 {
-  font-size: var(--font-size-18);
+  font-size: var(--font-size-14);
   color: var(--color-white);
 }
 .content .promo-flash-banner .container .promo-flash-timer {
@@ -636,7 +637,7 @@ html, body {
 .content .card-wrapper-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(2, 550px);
+  grid-template-columns: repeat(2, 600px);
   grid-template-rows: repeat(2, 400px);
 }
 .content .card-wrapper-grid #item-card-grid-1 {
@@ -887,6 +888,9 @@ html, body {
   margin: 1rem;
   width: 600px;
 }
+.login-content .login-forms .container .form-card h2 {
+  margin-bottom: 1rem;
+}
 .login-content .login-forms .container .form-card .register {
   display: flex;
   flex-direction: column;
@@ -897,12 +901,13 @@ html, body {
 }
 .login-content .login-forms .container .form-card .register label {
   font-size: var(--font-size-14);
+  margin-bottom: 0.3rem;
 }
 .login-content .login-forms .container .form-card .register input {
   border: none;
   border-radius: var(--border-radius-small);
-  margin-bottom: 1rem;
-  padding: 0.3rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
 }
 .login-content .login-forms .container .form-card .register input:focus {
   box-shadow: 2px 2px 10px var(--color-theme-dark);
@@ -911,6 +916,11 @@ html, body {
 .login-content .login-forms .container .form-card .register a {
   text-decoration: none;
   color: var(--color-theme);
+  transition: 100ms ease-in-out;
+}
+.login-content .login-forms .container .form-card .register a:hover {
+  color: var(--color-theme-dark);
+  text-decoration: underline;
 }
 .login-content .login-forms .container .form-card .register .btn {
   background-color: var(--color-theme);
@@ -918,6 +928,7 @@ html, body {
   color: var(--color-white);
   border: none;
   transition: 250ms ease-in-out;
+  margin-top: 2rem;
 }
 .login-content .login-forms .container .form-card .register .btn:hover {
   border: none;
@@ -937,12 +948,13 @@ html, body {
 }
 .login-content .login-forms .container .form-card .login label {
   font-size: var(--font-size-14);
+  margin-bottom: 0.3rem;
 }
 .login-content .login-forms .container .form-card .login input {
   border: none;
   border-radius: var(--border-radius-small);
-  margin-bottom: 1rem;
-  padding: 0.3rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
 }
 .login-content .login-forms .container .form-card .login input:focus {
   box-shadow: 2px 2px 10px var(--color-theme-dark);
@@ -954,6 +966,7 @@ html, body {
   color: var(--color-white);
   border: none;
   transition: 250ms ease-in-out;
+  margin-top: 2rem;
 }
 .login-content .login-forms .container .form-card .login .btn:hover {
   border: none;
@@ -967,12 +980,15 @@ html, body {
 }
 .login-content .login-forms .container .form-card .login #lost-password:hover {
   color: var(--color-theme-dark);
+  text-decoration: underline;
 }
-.login-content .login-forms .container .form-card .login #remember:focus {
+.login-content .login-forms .container .form-card .login .remember input {
   box-shadow: none;
-}
-.login-content .login-forms .container .form-card .login #remember:hover {
   cursor: pointer;
+}
+.login-content .login-forms .container .form-card .login .remember label:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 .login-content .login-forms .login-with .divider-line {
   height: 2px;

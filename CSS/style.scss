@@ -48,6 +48,7 @@ html, body {
     align-items: center;
 }
 
+// the section title element
 .section-title {
     
     text-align: center;
@@ -528,7 +529,7 @@ html, body {
             height: 8rem;
         }
    }
-
+// item-cards
     .card-wrapper {
         display: flex;
         justify-content: space-between;
@@ -539,7 +540,7 @@ html, body {
             background-color: var(--color-gray-4);
             border-radius: var(--border-radius-small);
             height: 400px;
-            width: 350px;
+            width: 300px;
             overflow: hidden;
             position: relative;
             margin: 1rem;
@@ -662,7 +663,7 @@ html, body {
                 top: 85%;
             }
     }
-
+// The divider between itemcards, called promobanner
     .promo-banner {
         background-color: var(--color-gray-1);
         margin-top: 5rem;
@@ -739,7 +740,7 @@ html, body {
             } 
         }
     }
-
+// Flashsale promobanner
     .promo-flash-banner {
         background-color: var(--color-theme-dark);
         margin-top: 5rem;
@@ -757,16 +758,17 @@ html, body {
                 text-align: center;
                 height: 60%;
                 width: 250px;
-                padding: 0rem 2rem;
+                padding: 2rem;
 
                 h1 {
                     color: var(--color-white);
-                    font-size: var(--font-size-60);
+                    font-size: 60px;
                     font-family: var(--font-play);
+                    font-weight: var(--font-weight-bold);
                 }
 
                 h2 {
-                    font-size: var(--font-size-18);
+                    font-size: var(--font-size-14);
                     color: var(--color-white);
                 }
             }
@@ -822,11 +824,11 @@ html, body {
             }  
         }
     }
-
+// big item cards with grid
     .card-wrapper-grid {
         display: grid;
         gap: 1rem;
-        grid-template-columns: repeat(2 , 550px);
+        grid-template-columns: repeat(2 , 600px);
         grid-template-rows: repeat(2 , 400px);
 
         #item-card-grid-1 {
@@ -1025,7 +1027,7 @@ html, body {
                     
                 }
     }
-
+// Subscribe to newsletter
     .subscribe-newsletter {
         background-color: var(--color-gray-4);
 
@@ -1089,7 +1091,7 @@ html, body {
     }
 
 }
-
+// Footer
 .footer {
     background-color: var(--color-dark);
 
@@ -1147,6 +1149,10 @@ html, body {
                 margin: 1rem;
                 width: 600px;
 
+                h2 {
+                    margin-bottom: 1rem;
+                }
+
                 .register {
                     display: flex;
                     flex-direction: column;
@@ -1158,13 +1164,14 @@ html, body {
 
                     label {
                         font-size: var(--font-size-14);
+                        margin-bottom: .3rem;
                     }
 
                     input {
                         border: none;
                         border-radius: var(--border-radius-small);
-                        margin-bottom: 1rem;
-                        padding: .3rem;
+                        margin-bottom: 1.5rem;
+                        padding: .5rem;
 
                         &:focus {
                             box-shadow: 2px 2px 10px var(--color-theme-dark);
@@ -1176,6 +1183,12 @@ html, body {
                     a {
                         text-decoration: none;
                         color: var(--color-theme);
+                        transition: 100ms ease-in-out;
+                        
+                        &:hover {
+                            color: var(--color-theme-dark);
+                            text-decoration: underline;
+                        }
                     }
                     
                     .btn {
@@ -1184,6 +1197,7 @@ html, body {
                         color: var(--color-white);
                         border: none;
                         transition: 250ms ease-in-out;
+                        margin-top: 2rem;
 
 
                         &:hover {
@@ -1209,13 +1223,14 @@ html, body {
 
                     label {
                         font-size: var(--font-size-14);
+                        margin-bottom: .3rem;
                     }
 
                     input {
                         border: none;
                         border-radius: var(--border-radius-small);
-                        margin-bottom: 1rem;
-                        padding: .3rem;
+                        margin-bottom: 1.5rem;
+                        padding: .5rem;
 
                         &:focus {
                             box-shadow: 2px 2px 10px var(--color-theme-dark);
@@ -1229,6 +1244,7 @@ html, body {
                         color: var(--color-white);
                         border: none;
                         transition: 250ms ease-in-out;
+                        margin-top: 2rem;
 
                         &:hover {
                             border: none;
@@ -1244,17 +1260,20 @@ html, body {
 
                         &:hover {
                             color: var(--color-theme-dark);
+                            text-decoration: underline;
                         }
                     }
 
-                    #remember {
-                        
-                        &:focus {
-                            box-shadow: none;
-                        }
+                    .remember {
 
-                        &:hover {
+                        input {
+                            box-shadow: none;
                             cursor: pointer;
+                        }
+                        
+                        label:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
                         }
                     }
                 }
@@ -1342,9 +1361,7 @@ html, body {
                             box-shadow: 1px 1px 5px var(--color-theme-dark);
                         }
                 }
-
             }
         }
-        
     }
 }
