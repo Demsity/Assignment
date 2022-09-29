@@ -1,0 +1,258 @@
+// top-menu
+
+.top-menu { 
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    height: 40px;
+
+    .container {
+        padding: 0;
+    }
+
+    a {
+        color: var(--color-white);
+        text-decoration: none;
+        margin: 1rem;
+
+        &:hover {
+            color: var(--color-theme-dark);
+        }
+    }
+
+
+// Top menu site settings and dropboxes
+   
+    .site-settings {
+        display: flex;
+
+     }    
+
+        .site-settings .btn {
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            border: 0px;
+            transition: 250ms ease-in-out;
+            padding: 0;
+            margin-right: .5rem;
+        }    
+            .site-settings .btn:hover {
+                color: var(--color-theme-dark);
+                border: 0px;
+            }    
+
+    .site-settings .dropdown-menu {
+        background-color: var(--color-theme);
+        border-radius: 0;
+
+
+
+        a {
+            color: var(--color-white);
+            background-color: var(--color-theme);
+            margin: 1rem 0;
+
+        }
+            a:hover {
+                color: var(--color-theme-dark);
+                background-color: var(--color-theme);
+                font-weight: var(--font-weight-bold);
+            }
+
+    
+        }
+
+// Top menu links and social media buttons
+      
+    .menu-links {
+        .social-media  {
+            margin-left: 1rem;
+            font-size: var(--font-size-14);
+
+        a {
+            margin: 0.3rem;
+    
+        }
+
+            a:last-child {
+                margin: 0 0 0 0.3rem;
+        
+            }
+
+    }
+
+    }
+
+ }    
+// The Main part of the Header
+.main-menu {
+    
+    .border-bottom {
+        border-color: var(--color-gray-3);
+    }
+
+    .container {
+        padding: 2rem 0; 
+        justify-content: space-around;
+    }
+// Left side, brand logo
+    .logo-menu {
+        flex: 2;
+        justify-content: start;
+    }
+// Searchbar
+    .searchbar {
+        flex: 3;
+        
+        input {
+            width: 90%;
+            height: 40px;
+            border-radius: 20px 0 0 20px;
+            padding: .2rem 1rem;
+            outline: none;
+            border: 1px solid;
+            border-color: var(--color-gray-2);
+        }
+
+        .btn {
+            border-radius: 0 20px 20px 0;
+            height: 40px;
+            transition: 250ms ease-in-out;
+            padding: .3rem .8rem;
+
+                &:hover {
+                    background-color: var(--color-theme-dark);
+                    color: var(--color-theme);
+                }
+        }
+
+
+    }
+// Right side, user controls
+    .user-controls  {
+        flex: 2;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+        
+        button {
+            position: absolute;
+            border-radius: 50%;
+            border: none;
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            font-size: .8rem;
+
+
+        }
+
+        .user-controls i {
+            font-size: var(--font-size-16)
+        }
+    
+        .user-controls a {
+            color: var(--color-theme-dark);
+            text-decoration: none;
+            margin: 0 0 0 1rem;
+            transition: 250ms ease-in-out;
+        }
+            .user-controls a:hover {
+                color: var(--color-theme);
+
+                #total-amount-shuffel {
+                    color: var(--color-theme-dark);
+                    transition: 250ms ease-in-out;
+                }
+
+                #total-amount-cart {
+                    color: var(--color-theme-dark);
+                    transition: 250ms ease-in-out;
+                }
+
+            }
+
+
+        #shuffel {
+            position: relative;
+
+            #total-amount-shuffel {
+                position: absolute;
+                top: -.8rem;
+                left: .7rem;
+
+            }
+        }
+
+        #cart {
+            position: relative;
+
+            #total-amount-cart {
+                position: absolute;
+                top: -.8rem;
+                left: .7rem;
+    
+            }
+
+        }
+
+}
+ // The bottom part of the header
+.main-menu-bottom {
+
+    .container {
+    padding: 0;
+    margin-top: 0;
+    }   
+ // The categories dropdown menu
+    .dropdown {
+        background-color: var(--color-theme);
+
+        .btn {
+            color: var(--color-white);
+            border: 0px;
+            // Height not working properly, fixed height ok?
+            height: 3.5rem;
+        }
+            .btn:hover {
+                color: var(--color-theme-dark);
+                border: 0px;
+            }
+
+        .dropdown-menu {
+            background-color: var(--color-theme);
+            border-radius: 0;
+            transition: 250ms ease-in-out;
+        
+
+            a {
+                color: var(--color-white);
+            }
+                a:hover {
+                    background-color: var(--color-theme);
+                    color: var(--color-theme-dark);
+                    font-weight: var(--font-weight-bold);
+                }
+        }
+
+    }
+ // Special offer button
+    .special-offer {
+
+        padding: 0;
+        
+        #btn-special-offer {
+            border-radius: 2rem;
+            border: none;
+            padding: .5rem 1rem;
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            transition: 250ms ease-in-out;
+        }
+
+            #btn-special-offer:hover {
+                color: var(--color-theme-dark);
+                background-color: var(--color-theme-light);
+            }
+    }
+
+}

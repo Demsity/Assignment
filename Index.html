@@ -17,8 +17,7 @@
         <div class="top-menu">
             <div class="container">
                 <!-- Site settings dropdown menu of the top menu -->
-                     <!-- Fix Spacing between drop down and background -->
-                <div class="site-settings"> 
+                <section class="site-settings"> 
                     <div class="dropdown">
                         <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           ENG
@@ -41,7 +40,7 @@
                         </ul>
                     </div>
                     <!-- Links and social media of the top menu -->
-                </div>
+                </section>
                 <div class="menu-links">
                     <a href="#">Newsletter</a>
                     <a href="#">Contact us</a>
@@ -54,12 +53,10 @@
                         <a href="#"><i class="fa-brands fa-youtube"></i></a>
                     </span>
                 </div>
-
             </div>
-
         </div>
         <!-- The main part of the header -->
-        <div class="main-menu border-bottom">
+        <section class="main-menu border-bottom">
             <div class="container mt-4">
                 <span class="logo-menu">
                     <a href="index.html"><i><img src="images/Logotype.svg" alt="Logotype KenKata"></i></a>
@@ -70,6 +67,7 @@
                         <button class="btn"><i class="fa-regular fa-magnifying-glass"></i></button>
                     </form>
                 </span>
+                <!-- "usercontrols" account management and shopping cart -->
                 <span class="user-controls">
                     <a href="/log-in.html"><i class="fa-solid fa-user me-3"></i>My account</a>
                     <a href="/log-in.html"><i class="fa-solid fa-heart ms-5"></i></a>
@@ -84,10 +82,11 @@
                     </a>
                 </span>
             </div>
-        </div>
-        <div class="main-menu-bottom">
+        </section>
+        <!-- Header category dropdown -->
+        <section class="main-menu-bottom">
             <div class="container">
-                <div class="dropdown">
+                <nav class="dropdown">
                     <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-regular fa-bars-staggered"></i>
                         Browse Categories
@@ -101,35 +100,32 @@
                         <li><a class="dropdown-item" href="#">Watches<i class="fa-solid fa-chevron-right ms-3"></i></a></li>
                         <li><a class="dropdown-item" href="#">Women<i class="fa-solid fa-chevron-right ms-3"></i></a></li>
                     </ul>
-                </div>
-                <div class="special-offer">
+                </nav>
+                <nav class="special-offer">
                     <button id="btn-special-offer">SPECIAL OFFER</button>
-                </div>
-                
+                </nav>
             </div>
-        </div>
-
+        </section>
     </header>
     <!-- The Content part of the site -->
-    <div class="Carousell-wrapper">
-        <div class="carousell">
-            <div class="container">
-                <div class="carousell-text">
-                    <h1>Shopping is</h1>
-                    <h1 class="bold">MORE FUN</h1>
-                    <p>Vivamus dignissim a ex eu ornare. Ut fermentum orci vel diam ultricies faucibus. Quisque quis erat sed</p>
-                    <div class="carousell-btn">
-                        <button id="btn-shop-now">SHOP NOW</button>
-                    </div>
-                </div>
-                <div class="carousell-image">
-                    <img class="img-fluid mt-2" src="/Images/Carousell-image.svg" alt="Carousell-image">
+    <section class="carousell">
+        <!-- The "carousell or main promo img" -->
+        <div class="container">
+            <div class="carousell-text">
+                <h1>Shopping is</h1>
+                <h1 class="bold">MORE FUN</h1>
+                <p>Vivamus dignissim a ex eu ornare. Ut fermentum orci vel diam ultricies faucibus. Quisque quis erat sed</p>
+                <div class="carousell-btn">
+                    <button id="btn-shop-now">SHOP NOW</button>
                 </div>
             </div>
+            <div class="carousell-image">
+                <img class="img-fluid mt-2" src="/Images/Carousell-image.svg" alt="Carousell-image">
+            </div>
         </div>
-    </div>
+    </section>
     <!-- Webshop information boxes -->
-    <div class="webshop-info">
+    <section class="webshop-info">
         <div class="container-fluid">
             <div class="info-box">
                 <i><img src="/Images/Shipping-Icon.svg" alt="Shipping Icon"></i>
@@ -160,17 +156,17 @@
                 </span>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Shop-by-category title and grid -->
     <div class="content">
         <div class="container">
-            <div class="section-title">
+            <section class="section-title">
                 <h1>SHOP BY<strong class="ms-2">CATEGORY</strong></h1>
                 <img src="images/Squiggly-line.svg" alt="A Squiggly line">
                 <p class="mt-3">We always try to give you the best product within a fast and reliable way</p>
-            </div>
-        
-            <div class="grid">
+            </section>
+            <!-- Category cards -->
+            <section class="grid">
                 <a href="#" id="category-box-1" class="box">
                     <div class="category-box-title">
                         Men
@@ -213,21 +209,41 @@
                         <span class="category-box-products">66 products</span>
                     </div>
                 </a>
-            </div>
+            </section>
             <!-- New Arrivals section -->
-            <div class="section-title mt-5">
+            <section class="section-title mt-5">
                 <h1>NEW<strong class="ms-2">ARRIVALS</strong></h1>
                 <img src="images/Squiggly-line.svg" alt="A Squiggly line">
                 <p class="mt-3">Check out our latest products from top fashion designers</p>
-            </div>
-            <div class="card-wrapper">
+            </section>
+            <!-- Card section -->
+            <section class="card-wrapper">
+                <!-- card 1 -->
                 <div class="item-card">
                     <img src="images/Product_male.svg" alt="A person showing a product">
                     <div class="card-links">
                         <i id="in-stock-new-1" class="in-stock fa-sharp fa-solid fa-circle"></i>
-                        <a href="#"><i class="card-link-icon fa-regular fa-heart"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-shuffle"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-cart-shopping"></i></a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-heart"></i>
+                            <div class="hover-info-card">
+                                View later
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-shuffle"></i>
+                            <div class="hover-info-card">
+                                Compare
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-cart-shopping"></i>
+                            <div class="hover-info-card">
+                                Add to cart
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
                     </div>   
                     <div class="card-box">
                         <div class="card-info">
@@ -245,13 +261,32 @@
                         <i class="fa-light fa-star"></i>
                     </div>
                 </div>
+                <!-- card 2 -->
                 <div class="item-card">
                     <img src="images/Product_male_2.svg" alt="A person showing a product">
                     <div class="card-links">
                         <i id="in-stock-new-2" class="in-stock fa-sharp fa-solid fa-circle"></i>
-                        <a href="#"><i class="card-link-icon fa-regular fa-heart"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-shuffle"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-cart-shopping"></i></a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-heart"></i>
+                            <div class="hover-info-card">
+                                View later
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-shuffle"></i>
+                            <div class="hover-info-card">
+                                Compare
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-cart-shopping"></i>
+                            <div class="hover-info-card">
+                                Add to cart
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
                     </div>   
                     <div class="card-box">
                         <div class="card-info">
@@ -269,14 +304,33 @@
                         <i class="fa-light fa-star"></i>
                     </div>
                 </div>
+                <!-- card 3 -->
                 <div class="item-card">
                     <img src="images/Product_female.svg" alt="A person showing a product">
-                    <div class="card-links">
+                    <nav class="card-links">
                         <i id="in-stock-new-3" class="in-stock fa-sharp fa-solid fa-circle"></i>
-                        <a href="#"><i class="card-link-icon fa-regular fa-heart"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-shuffle"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-cart-shopping"></i></a>
-                    </div>   
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-heart"></i>
+                            <div class="hover-info-card">
+                                View later
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-shuffle"></i>
+                            <div class="hover-info-card">
+                                Compare
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-cart-shopping"></i>
+                            <div class="hover-info-card">
+                                Add to cart
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                    </nav>   
                     <div class="card-box">
                         <div class="card-info">
                             <p>Circle pattern girls shirt</p>
@@ -294,12 +348,13 @@
                         <i class="fa-regular fa-star-half-stroke"></i>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
+        <!-- Promobanner section -->
         <section class="promo-banner">
             <div class="container">
                 <div class="promo-box">
-                    <h1><strong>30%</strong> off</h1>
+                    <h1><strong>30%</strong> <bold>OFF</bold></h1>
                     <h2>For new customers</h2>
                     <button class="btn">SHOP NOW</button>
                 </div>
@@ -309,21 +364,43 @@
                 </div>
             </div>
         </section>
-        <div class="container">
+        <!-- Featured products section -->
+        <section class="container">
             <div class="section-title mt-5">
                 <h1>FEATURED <strong class="ms-2">PRODUCTS</strong></h1>
                 <img src="images/Squiggly-line.svg" alt="A Squiggly line">
                 <p class="mt-3">Check out our monthly featured products from top brands</p>
             </div>
+            <!-- Card section -->
             <div class="card-wrapper">
+                <!-- card 1 -->
                 <div class="item-card">
                     <img src="images/Product_male.svg" alt="A person showing a product">
                     <div class="card-links">
                         <i id="in-stock-featured-1" class="in-stock fa-sharp fa-solid fa-circle"></i>
-                        <a href="#"><i class="card-link-icon fa-regular fa-heart"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-shuffle"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-cart-shopping"></i></a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-heart"></i>
+                            <div class="hover-info-card">
+                                View later
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-shuffle"></i>
+                            <div class="hover-info-card">
+                                Compare
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-cart-shopping"></i>
+                            <div class="hover-info-card">
+                                Add to cart
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
                     </div>   
+                    
                     <div class="card-box">
                         <div class="card-info">
                             <p>Winter collection for women's</p>
@@ -340,13 +417,32 @@
                         <i class="fa-light fa-star"></i>
                     </div>
                 </div>
+                <!-- card 2 -->
                 <div class="item-card">
                     <img src="images/Product_male_2.svg" alt="A person showing a product">
                     <div class="card-links">
                         <i id="in-stock-featured-2" class="in-stock fa-sharp fa-solid fa-circle"></i>
-                        <a href="#"><i class="card-link-icon fa-regular fa-heart"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-shuffle"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-cart-shopping"></i></a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-heart"></i>
+                            <div class="hover-info-card">
+                                View later
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-shuffle"></i>
+                            <div class="hover-info-card">
+                                Compare
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-cart-shopping"></i>
+                            <div class="hover-info-card">
+                                Add to cart
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
                     </div>   
                     <div class="card-box">
                         <div class="card-info">
@@ -364,13 +460,32 @@
                         <i class="fa-light fa-star"></i>
                     </div>
                 </div>
+                <!-- card 3 -->
                 <div class="item-card">
                     <img src="images/Product_female.svg" alt="A person showing a product">
                     <div class="card-links">
                         <i id="in-stock-featured-3" class="in-stock fa-sharp fa-solid fa-circle"></i>
-                        <a href="#"><i class="card-link-icon fa-regular fa-heart"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-shuffle"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-cart-shopping"></i></a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-heart"></i>
+                            <div class="hover-info-card">
+                                View later
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-shuffle"></i>
+                            <div class="hover-info-card">
+                                Compare
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-cart-shopping"></i>
+                            <div class="hover-info-card">
+                                Add to cart
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
                     </div>   
                     <div class="card-box">
                         <div class="card-info">
@@ -389,13 +504,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- flashsale banner section -->
         <section class="promo-flash-banner">
             <div class="container">
                 <div class="promo-flash-box">
                     <h1>FLASH SALE</h1>
                     <h2>UP TO 50% OFF</h2>
                 </div>
+                <!-- Timer for sale end, needs name for JS later -->
                 <div class="promo-flash-timer">
                     <div class="time-circle-row">
                         <div class="time-circle">
@@ -419,20 +536,41 @@
                 </div>
             </div>
         </section>
-        <div class="container">
+        <!-- Top selles section -->
+        <section class="container">
             <div class="section-title mt-5">
                 <h1>TOP<strong class="ms-2"> SELLERS</strong></h1>
                 <img src="images/Squiggly-line.svg" alt="A Squiggly line">
                 <p class="mt-3">Check out our weekly top sellers in all category</p>
             </div>
+            <!-- Card section -->
             <div class="card-wrapper-grid">
+                <!-- card 1 -->
                 <div id="item-card-grid-1" class="item-card-grid">
                     <img src="images/Product_male_xbig.svg" alt="A person showing a product">
                     <div class="card-links">
                         <i id="in-stock-top-1" class="in-stock fa-sharp fa-solid fa-circle"></i>
-                        <a href="#"><i class="card-link-icon fa-regular fa-heart"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-shuffle"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-cart-shopping"></i></a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-heart"></i>
+                            <div class="hover-info-card">
+                                View later
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-shuffle"></i>
+                            <div class="hover-info-card">
+                                Compare
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-cart-shopping"></i>
+                            <div class="hover-info-card">
+                                Add to cart
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
                     </div>   
                     <div class="card-box-big">
                         <div class="card-info">
@@ -450,13 +588,32 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                 </div>
+                <!-- card 2 -->
                 <div id="item-card-grid-2" class="item-card-grid">
                     <img src="images/Product_female_bag.svg" alt="A person showing a product">
                     <div class="card-links">
                         <i id="in-stock-top-2" class="in-stock fa-sharp fa-solid fa-circle"></i>
-                        <a href="#"><i class="card-link-icon fa-regular fa-heart"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-shuffle"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-cart-shopping"></i></a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-heart"></i>
+                            <div class="hover-info-card">
+                                View later
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-shuffle"></i>
+                            <div class="hover-info-card">
+                                Compare
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-cart-shopping"></i>
+                            <div class="hover-info-card">
+                                Add to cart
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
                     </div>   
                     <div class="card-box">
                         <div class="card-info">
@@ -474,13 +631,32 @@
                         <i class="fa-light fa-star"></i>
                     </div>
                 </div>
+                <!-- card 3 -->
                 <div id="item-card-grid-3" class="item-card-grid">
                     <img src="images/Product_shoes.svg" alt="A person showing a product">
                     <div class="card-links">
                         <i id="in-stock-top-3" class="in-stock fa-sharp fa-solid fa-circle"></i>
-                        <a href="#"><i class="card-link-icon fa-regular fa-heart"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-shuffle"></i></a>
-                        <a href="#"><i class="card-link-icon fa-regular fa-cart-shopping"></i></a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-heart"></i>
+                            <div class="hover-info-card">
+                                View later
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-shuffle"></i>
+                            <div class="hover-info-card">
+                                Compare
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="card-link-icon fa-regular fa-cart-shopping"></i>
+                            <div class="hover-info-card">
+                                Add to cart
+                                <div class="arrow-card-link"></div>
+                            </div>
+                        </a>
                     </div>   
                     <div class="card-box">
                         <div class="card-info">
@@ -500,14 +676,17 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- Subscribe to newsletter section -->
         <section class="subscribe-newsletter">
             <div class="container">
                 <div class="subscribe-form">
                     <div class="section-title">
                         <h1>SUBSCRIBE<strong class="ms-2">NOW</strong></h1>
-                        <p class="mt-3">Signup for awesome news about our new products</br> and
-                            know our special discounts on products.</p>
+                        <p class="mt-3">
+                            Signup for awesome news about our new products</br> and
+                            know our special discounts on products.
+                        </p>
                     </div>
                     <form id="subscribe-newsletter">
                         <input type="email" placeholder="Enter email address">
@@ -518,10 +697,11 @@
             </div>
         </section>
     </div>
-<footer class="footer">
-    <div class="container footer-text">
-        <p>© Copyright 2022 Kenkata</p>
-    </div>
-</footer>
+    <!-- The footer -->
+    <footer class="footer">
+        <div class="container footer-text">
+            <p>© Copyright 2022 Kenkata</p>
+        </div>
+    </footer>
 </body>
 </html>

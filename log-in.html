@@ -17,7 +17,6 @@
         <div class="top-menu">
             <div class="container">
                 <!-- Site settings dropdown menu of the top menu -->
-                     <!-- Fix Spacing between drop down and background -->
                 <div class="site-settings"> 
                     <div class="dropdown">
                         <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -70,6 +69,7 @@
                         <button class="btn"><i class="fa-regular fa-magnifying-glass"></i></button>
                     </form>
                 </span>
+                <!-- "usercontrols" account management and shopping cart -->
                 <span class="user-controls">
                     <a href="#"><i class="fa-solid fa-user me-3"></i>My account</a>
                     <a href="#"><i class="fa-solid fa-heart ms-5"></i></a>
@@ -85,6 +85,7 @@
                 </span>
             </div>
         </div>
+        <!-- Header category dropdown -->
         <div class="main-menu-bottom">
             <div class="container">
                 <div class="dropdown">
@@ -109,6 +110,7 @@
             </div>
         </div>
     </header>
+    <!-- breadcrums -->
     <div class="login-content">
         <section class="breadcrumbs">
             <div class="container">
@@ -121,16 +123,20 @@
                 </nav>
             </div>
         </section>
+        <!-- regsiter and login -->
         <section class="login-forms">  
             <div class="container">
+                <!-- Login card -->
                 <div class="form-card">
                     <h2>LOGIN</h2>
-                    <form class="login" method="post">
+                    <form class="login">
                         <label for="email">Email adress <p class="required">*</p></label>
-                        <input type="email" name="email" id="email-signin" required>
+                        <input type="email" id="email-signin" required>
+                        <p class="form-error">Error Email not vaild</p>
                         <label for="password">Password <p class="required">*</p></label>
-                        <input type="password" name="password" id="password-signin" required>
-                        <button class="btn mt-3" type="submit">LOG IN</button>
+                        <input type="password" id="password-signin" required>
+                        <p class="form-error">Error password not vaild</p>
+                        <button class="btn mt-5" type="submit">LOG IN</button>
                         <div class="container mt-3">
                                 <div class="remember">
                                     <input id="remember" type="checkbox">
@@ -139,6 +145,7 @@
                                 <a id="lost-password" href="#">Lost your password?</a>
                         </div>
                     </form>
+                    <!-- Login with section -->
                     <div class="login-with">
                         <div class="divider container">
                             <div class="divider-line"></div>
@@ -159,25 +166,31 @@
                         </div>
                     </div>
                 </div>
+                <!-- Register card -->
                 <div class="form-card">
                     <h2>REGISTER</h2>
                     <p>Registering for this site allows you to access your order status and history. Just fill in the fields below, and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.</p>
-                    <form class="register" method="post">
+                    <form class="register">
                         <label for="firstname">Firstname <p class="required">*</p></label>
-                        <input type="text" name="firstname" id="firstname-reg" required>
+                        <input type="text" id="firstname-reg" required>
+                        <p class="form-error">Error firstname not vaild</p>
                         <label for="lastname">Lastname <p class="required">*</p></label>
-                        <input type="text" name="lastname" id="lastname-reg" required>
+                        <input type="text" id="lastname-reg" required>
+                        <p class="form-error">Error lastname not vaild</p>
                         <label for="email">Email adress <p class="required">*</p></label>
-                        <input type="email" name="email" id="email-reg" required>
+                        <input type="email" id="email-reg" required>
+                        <p class="form-error">Error email not vaild</p>
                         <label for="password">Password <p class="required">*</p></label>
-                        <input type="password" name="password" id="password-reg" required>
-                        <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy</a>.</p>
+                        <input type="password" id="password-reg" required>
+                        <p class="form-error">Error password not vaild</p>
+                        <p class="mt-5">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy</a>.</p>
                         <button class="btn" type="submit">REGISTER</button>
                     </form>
                 </div>
             </div>
         </section>
     </div>
+    <!-- Footer -->
     <footer class="footer">
         <div class="container footer-text">
             <p>© Copyright 2022 Kenkata</p>
