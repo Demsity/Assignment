@@ -212,17 +212,22 @@
             border: 0px;
             // Height not working properly, fixed height ok?
             height: 3.5rem;
-        }
-            .btn:hover {
-                color: var(--color-theme-dark);
+
+            &:hover {
+                color: var(--color-theme);
                 border: 0px;
             }
+
+
+        }
+
 
         .dropdown-menu {
             background-color: var(--color-theme);
             border-radius: 0;
             transition: 250ms ease-in-out;
-        
+            width: 100%;       
+
 
             a {
                 color: var(--color-white);
